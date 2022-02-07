@@ -1,4 +1,6 @@
 FROM centos:latest
+RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-Linux-*
+RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-Linux-*
 
 RUN yum update -y
 RUN yum -y install gdb
@@ -11,6 +13,7 @@ RUN yum -y install htop
 RUN yum -y install iftop
 RUN yum -y install iotop
 RUN yum -y install cscope
+RUN yum -y install dos2unix
 RUN yum -y install tree
 RUN dnf -y group install "Development Tools"
 RUN dnf -y install gcc-toolset-11-gcc
