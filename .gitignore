@@ -31,6 +31,3 @@
 *.out
 *.app
 
-# CA Keys
-*.pem
-*.srl
