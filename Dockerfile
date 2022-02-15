@@ -58,6 +58,7 @@ WORKDIR /
 
 RUN dnf -y install openssl-devel
 RUN yum -y install gnutls-devel
+RUN dnf -y install openssl
 ENV PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 ENV LD_LIBRARY_PATH=/usr/local/lib
 

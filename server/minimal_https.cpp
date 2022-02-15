@@ -131,8 +131,8 @@ void usage() {
 int main(int argc, char **argv) {
 	uint16_t port = 8080;
 	int c;
-	const char *key = "key.pem";
-	const char *cert = "cert.pem";
+	const char *key = "pki/ia.key";
+	const char *cert = "pki/ia.crt";
 	bool secure = false;
 
 	while ((c = getopt(argc, argv, "p:k:c:sv?")) != EOF) {
