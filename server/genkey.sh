@@ -1,6 +1,10 @@
 #!/bin/sh
 
-mkdir pki
+# Stop on errors, print commands
+set -Eeuo pipefail
+set -x
+
+mkdir -p pki
 
 # Generate 4096-bit long RSA key for root CA and store it in ca.key
 openssl genrsa -out pki/ca.key 4096

@@ -5,7 +5,7 @@ CXXFLAGS = -std=c++17 -Wall
 LDFLAGS = -lhttpserver
 
 # Makefile settings - Can be customized.
-APPNAME = myapp
+APPNAME = service
 EXT = .cpp
 SRCDIR = .
 OBJDIR = .

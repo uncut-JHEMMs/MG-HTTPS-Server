@@ -1,0 +1,11 @@
+{
+	"port" : 8080,
+	"max_threads" : 5,
+	"max_connections" : 15,
+	"connection_timeout" : 180,
+	"use_ssl": true,
+	"https_mem_key": "pki/ia.key",
+	"https_mem_cert": "pki/ia.crt",
+	"memory_limit": 32768,
+	"use_ipv6": true
+}
