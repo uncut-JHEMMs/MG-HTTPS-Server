@@ -7,6 +7,20 @@
 
 #define MY_OPAQUE "11733b200778ce33060f31c9af70a870ba96ddd5"
 
+class hello_resource: public httpserver::http_resource {
+ public:
+     hello_resource() {};
+
+     ~hello_resource() {};
+
+	const std::shared_ptr<httpserver::http_response> render_GET(const httpserver::http_request &req) {
+	    std::cout << "hello GET" << std::endl;
+	    httpserver::string_response* res = new httpserver::string_response("Hello World!\n", 200);
+	    return std::shared_ptr<httpserver::http_response>(res);
+	}
+};
+
+
 class service_resource: public httpserver::http_resource {
 private:
 	std::unordered_map<std::string, std::string> users;

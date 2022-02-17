@@ -44,7 +44,9 @@ int main(int argc, char **argv) {
 
 	// Create and register service resource available at /service
 	service_resource res;
+	hello_resource res2;
 	ws.register_resource("/service", &res, true);
+	ws.register_resource("/hello", &res2, true);
 
 	// Start and block the webserver
 	ws.start(true);
