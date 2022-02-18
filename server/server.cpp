@@ -3,6 +3,7 @@
 #include <string>
 #include <cstring>
 #include <iostream>
+#include <thread>
 #include <httpserver.hpp>
 #include "service_resource.hpp"
 #include "settings.hpp"
@@ -41,6 +42,9 @@ int main(int argc, char **argv) {
 
 	// Create webserver using the configured options
 	httpserver::webserver ws = cw;
+
+	// Create logging thread
+	std::thread t(logging);
 
 	// Create and register service resource available at /service
 	service_resource res;
