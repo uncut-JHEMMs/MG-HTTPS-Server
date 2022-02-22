@@ -31,3 +31,6 @@
 *.out
 *.app
 
+server/myapp
+testing/
+server/service
