@@ -35,10 +35,22 @@ void logging() {
 }
 
 class hello_resource: public httpserver::http_resource {
- public:
-	 hello_resource() {};
+public:
+	hello_resource() {
+		{
+			std::lock_guard<std::mutex> lk(mut);
+			logStr = "Started up server";
+		}
+		cv.notify_one();
+	};
 
-	 ~hello_resource() {};
+	~hello_resource() {
+		{
+			std::lock_guard<std::mutex> lk(mut);
+			logStr = "Shut down server";
+		}
+		cv.notify_one();
+	};
 
 	const std::shared_ptr<httpserver::http_response> render_GET(const httpserver::http_request &req) {
 		httpserver::string_response* res = new httpserver::string_response("Hello World!\n", 200);

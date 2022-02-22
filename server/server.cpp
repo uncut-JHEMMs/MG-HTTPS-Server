@@ -55,5 +55,7 @@ int main(int argc, char **argv) {
 	// Start and block the webserver
 	ws.start(true);
 
+	t.join();
+
 	return 0;
 }

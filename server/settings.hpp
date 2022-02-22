@@ -43,11 +43,15 @@ struct Settings {
 void readFromJSON(int argc, char * const argv[], Settings &s) {
 	nlohmann::json j;
 
+	// Parse and clean up file name
 	if (optarg == NULL && optind < argc && argv[optind][0] != '-') {
 		optarg = argv[optind++];
 	}
 	if (optarg != NULL) {
 		s.config = optarg;
+	}
+	if (s.config[0] == ' ') {
+		s.config.erase(0, 1);
 	}
 
 	std::ifstream configFile(s.config);
@@ -93,6 +97,7 @@ void readFromJSON(int argc, char * const argv[], Settings &s) {
 // Get server settings
 void getSettings(int argc, char * const argv[], Settings &s) {
 	int c;
+	optind = 1;
 	while ((c = getopt(argc, argv, "f::p:C:m:t:k:c:svi?")) != EOF) {
 		switch (c) {
 			case 'f': {
@@ -120,10 +125,16 @@ void getSettings(int argc, char * const argv[], Settings &s) {
 			}
 			case 'k': {
 				s.key = optarg;
+				if (s.key[0] == ' ') {
+					s.key.erase(0, 1);
+				}
 				break;
 			}
 			case 'c': {
 				s.cert = optarg;
+				if (s.cert[0] == ' ') {
+					s.cert.erase(0, 1);
+				}
 				break;
 			}
 			case 's': {
