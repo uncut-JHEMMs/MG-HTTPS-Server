@@ -69,19 +69,19 @@ cd ..
 Server startup options:
 | Option | Description |
 | ------ | ----------- |
-| -f <optional> | Provide a custom json config file, config.json by default if no file parameter provided |
-| -p <required> | Port number |
-| -C <required> | Maximum connections |
-| -m <required> | Memory limit (Bytes) |
-| -t <required> | Timeout time (seconds) |
-| -k <required> | CA Key file |
-| -c <required> | CA cert file |
+| -f \<optional\> | Provide a custom json config file, config.json by default if no file parameter provided |
+| -p \<required\> | Port number |
+| -C \<required\> | Maximum connections |
+| -m \<required\> | Memory limit (Bytes) |
+| -t \<required\> | Timeout time (seconds) |
+| -k \<required\> | CA Key file |
+| -c \<required\> | CA cert file |
 | -s | Use https |
 | -v | Verbose |
 | -i | Use IPv4 and IPv6 |
 
 Config file format:
-```json
+```yaml
 {
 	"port" : int,
 	"max_threads" : int,
