@@ -81,7 +81,7 @@ Server startup options:
 | -i | Use IPv4 and IPv6 |
 
 Config file format:
-```yaml
+```javascript
 {
 	"port" : int,
 	"max_threads" : int,
