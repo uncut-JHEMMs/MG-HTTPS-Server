@@ -59,6 +59,10 @@ WORKDIR /
 RUN dnf -y install openssl-devel
 RUN yum -y install gnutls-devel
 RUN dnf -y install openssl
+RUN dnf -y install sysstat
+RUN dnf -y install perf
+RUN dnf -y install ioping
+RUN dnf -y install fio
 ENV PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 ENV LD_LIBRARY_PATH=/usr/local/lib
 
