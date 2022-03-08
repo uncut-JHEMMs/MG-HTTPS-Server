@@ -18,7 +18,7 @@ std::mutex mut;
 std::condition_variable cv;
 
 void logging() {
-	std::ofstream logFile("log.txt", std::ios_base::app);
+	std::ofstream logFile("output/log.txt", std::ios_base::app);
 	if (!logFile.is_open()) {
 		std::cout << "Failed to open log.txt" << std::endl;
 		exit(1);
