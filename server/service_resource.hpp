@@ -53,10 +53,12 @@ public:
 	};
 
 	const std::shared_ptr<httpserver::http_response> render_GET(const httpserver::http_request &req) {
+		system("date '+%s%N' | cut -b1-13 >> output/latency.txt");
 		httpserver::string_response* res = new httpserver::string_response("Hello World!\n", 200);
 		{
 			std::lock_guard<std::mutex> lk(mut);
 			logStr = "Hello world reached";
+			system("date '+%s%N' | cut -b1-13 >> output/latency.txt");
 		}
 		cv.notify_one();
 		return std::shared_ptr<httpserver::http_response>(res);
