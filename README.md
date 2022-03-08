@@ -5,11 +5,21 @@
 - **bin**: Shell scripts to Build, Spinup, and Attach a Docker container using the given Dockerfile
 - **pki**: CA files for HTTPS
 - **server**: all server files
+- **server/tests**: C++ server unit tests
+- **server/performance**: Shell scripts to test server performance
+- **server/output**: Output files from tests
 
-## Files
+## Important Files
 
 - **server/config.json**: JSON file for custom server startup options
 - **server/log.txt**: log file of server interactions
+
+## Scripts
+
+- **apm&#46;sh**: Run various performance monitoring commands while the server is running and print to /output
+- **baseStats&#46;sh**: Prints basic server stats to output/InitialStats.txt and similar files
+- **latency&#46;sh**: Prints server latency stats to output/scSummary.txt and output/csSummary.txt
+- **performance/data/dataThroughput&#46;sh**: Prints data throughput stats to performance/data/DataSummary.txt
 
 ## Basic Usage
 
