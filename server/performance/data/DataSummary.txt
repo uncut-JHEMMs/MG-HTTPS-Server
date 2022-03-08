@@ -19,36 +19,36 @@ blkid
 
 Latency test
 --- . (9p C:\134) ioping statistics ---
-9 requests completed in 7.24 ms, 36 KiB read, 1.24 k iops, 4.86 MiB/s
+9 requests completed in 5.90 ms, 36 KiB read, 1.53 k iops, 5.96 MiB/s
 generated 10 requests in 9.00 s, 40 KiB, 1 iops, 4.44 KiB/s
-min/avg/max/mdev = 254.5 us / 804.4 us / 1.07 ms / 274.6 us
+min/avg/max/mdev = 321.7 us / 655.1 us / 1.01 ms / 302.9 us
 
 Sequential write fio test
-IOPS=317, BW=317MiB/s (333MB/s)(16.0GiB/51652msec);
+IOPS=270, BW=271MiB/s (284MB/s)(15.9GiB/60002msec);
 Run status group 0 (all jobs):
-  WRITE: bw=317MiB/s (333MB/s), 317MiB/s-317MiB/s (333MB/s-333MB/s), io=16.0GiB (17.2GB), run=51652-51652msec
+  WRITE: bw=271MiB/s (284MB/s), 271MiB/s-271MiB/s (284MB/s-284MB/s), io=15.9GiB (17.0GB), run=60002-60002msec
 
 Sequential read fio test
-IOPS=533, BW=533MiB/s (559MB/s)(16.0GiB/30725msec)
+IOPS=532, BW=533MiB/s (559MB/s)(16.0GiB/30750msec)
 Run status group 0 (all jobs):
-   READ: bw=533MiB/s (559MB/s), 533MiB/s-533MiB/s (559MB/s-559MB/s), io=16.0GiB (17.2GB), run=30725-30725msec
+   READ: bw=533MiB/s (559MB/s), 533MiB/s-533MiB/s (559MB/s-559MB/s), io=16.0GiB (17.2GB), run=30750-30750msec
 
 Random write fio test
-IOPS=3868, BW=242MiB/s (254MB/s)(14.2GiB/60007msec);
+IOPS=3316, BW=207MiB/s (217MB/s)(12.1GiB/60017msec);
 Run status group 0 (all jobs):
-  WRITE: bw=242MiB/s (254MB/s), 242MiB/s-242MiB/s (254MB/s-254MB/s), io=14.2GiB (15.2GB), run=60007-60007msec
+  WRITE: bw=207MiB/s (217MB/s), 207MiB/s-207MiB/s (217MB/s-217MB/s), io=12.1GiB (13.0GB), run=60017-60017msec
 
 Random read fio test
-IOPS=8427, BW=527MiB/s (552MB/s)(16.0GiB/31106msec)
+IOPS=8408, BW=526MiB/s (551MB/s)(16.0GiB/31175msec)
 Run status group 0 (all jobs):
-   READ: bw=527MiB/s (552MB/s), 527MiB/s-527MiB/s (552MB/s-552MB/s), io=16.0GiB (17.2GB), run=31106-31106msec
+   READ: bw=526MiB/s (551MB/s), 526MiB/s-526MiB/s (551MB/s-551MB/s), io=16.0GiB (17.2GB), run=31175-31175msec
 
 Random write small block fio test
-IOPS=7935, BW=62.0MiB/s (65.0MB/s)(3721MiB/60017msec);
+IOPS=6846, BW=53.5MiB/s (56.1MB/s)(3210MiB/60018msec);
 Run status group 0 (all jobs):
-  WRITE: bw=62.0MiB/s (65.0MB/s), 62.0MiB/s-62.0MiB/s (65.0MB/s-65.0MB/s), io=3721MiB (3902MB), run=60017-60017msec
+  WRITE: bw=53.5MiB/s (56.1MB/s), 53.5MiB/s-53.5MiB/s (56.1MB/s-56.1MB/s), io=3210MiB (3366MB), run=60018-60018msec
 
 Random read small block fio test
-IOPS=31.9k, BW=249MiB/s (262MB/s)(14.6GiB/60001msec)
+IOPS=31.4k, BW=246MiB/s (258MB/s)(14.4GiB/60001msec)
 Run status group 0 (all jobs):
-   READ: bw=249MiB/s (262MB/s), 249MiB/s-249MiB/s (262MB/s-262MB/s), io=14.6GiB (15.7GB), run=60001-60001msec
+   READ: bw=246MiB/s (258MB/s), 246MiB/s-246MiB/s (258MB/s-258MB/s), io=14.4GiB (15.5GB), run=60001-60001msec
