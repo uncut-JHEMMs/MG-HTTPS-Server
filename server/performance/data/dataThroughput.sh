@@ -3,7 +3,7 @@
 set -Eeuo pipefail
 
 latOut=tmp/ioping.out
-summary=summary.txt
+summary=DataSummary.txt
 
 echo "Printing lsblk stats"
 echo "lsblk" > $summary

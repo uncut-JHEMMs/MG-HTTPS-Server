@@ -1,4 +1,6 @@
-#set -Eeuo pipefail
+#!/bin/sh
+
+set -Eeuo pipefail
 
 outFile=output/InitialStats.txt
 outFileCache=output/InitialStats_Cache.txt
