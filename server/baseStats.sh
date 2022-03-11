@@ -1,7 +1,5 @@
 #!/bin/sh
 
-#set -Eeuo pipefail
-
 outFile=output/InitialStats.txt
 outFileCache=output/InitialStats_Cache.txt
 outFileCall=output/InitialStats_Call.txt
@@ -73,13 +71,13 @@ sleep 1
 
 # Cachegrind stats
 valgrind --tool=cachegrind --cachegrind-out-file=output/cachegrind.out ./service &
-sleep 1
+sleep 2
 pid=$!
 
 curl -s localhost:8080/hello
 getStats $outFileCache $pid
 kill $pid
-sleep 1
+sleep 2
 
 echo "" >> $outFileCache
 echo "cachegrind" >> $outFileCache
@@ -89,13 +87,13 @@ echo $sep >> $outFileCache
 
 # Callgrind stats
 valgrind --tool=callgrind --callgrind-out-file=output/callgrind.out ./service &
-sleep 1
+sleep 2
 pid=$!
 
 curl -s localhost:8080/hello
 getStats $outFileCall $pid
 kill $pid
-sleep 1
+sleep 2
 
 echo "" >> $outFileCall
 echo "callgrind" >> $outFileCall
@@ -104,13 +102,13 @@ echo $sep >> $outFileCall
 
 # Massif stats
 valgrind --tool=massif --stacks=yes --xtree-memory=full --xtree-memory-file=output/xtmemory.kcg --massif-out-file=output/massif.out ./service &
-sleep 1
+sleep 2
 pid=$!
 
 curl -s localhost:8080/hello
 getStats $outFileMassif $pid
 kill $pid
-sleep 1
+sleep 2
 
 echo "" >> $outFileMassif
 echo "massif" >> $outFileMassif
