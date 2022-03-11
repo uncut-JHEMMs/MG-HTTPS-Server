@@ -1,0 +1,98 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 3 (0x3)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=US, O=SmoothStack, OU=SmoothStack Certificate Authority, CN=SmoothStack TLS CA
+        Validity
+            Not Before: Feb  8 19:53:43 2022 GMT
+            Not After : Feb  8 19:53:43 2024 GMT
+        Subject: C=US, ST=Virginia, L=McLean, O=SmoothStack, OU=Training, CN=smoothstack.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:b7:c8:ad:44:66:5f:a3:43:d1:d5:12:d7:c1:d5:
+                    f4:82:af:44:65:9f:6f:fe:20:5f:fd:1c:ad:50:dd:
+                    4c:0b:3a:36:72:4c:b4:33:fe:71:c5:86:43:63:4a:
+                    ca:7e:f2:fe:8a:27:4a:ea:b7:d1:f5:16:69:bc:38:
+                    b9:c6:6b:a4:66:61:ce:8f:8e:b3:bb:2d:5d:7f:bf:
+                    e4:ce:4a:2a:5a:a0:af:d5:f4:32:49:4d:63:b4:8d:
+                    82:61:0e:4a:98:2c:8a:d1:45:51:af:c9:3d:47:cc:
+                    8d:50:71:b1:a8:7f:6a:d9:02:82:92:99:ce:d1:e9:
+                    54:94:be:1f:47:7b:c7:ee:0b:79:4a:97:91:f3:21:
+                    e1:27:89:29:cc:87:53:a8:f3:8f:ce:03:7d:91:5e:
+                    17:c5:66:e9:48:4e:25:a5:5d:b6:dc:20:c9:82:20:
+                    49:46:25:ad:7a:98:89:94:eb:3f:eb:d9:71:36:a1:
+                    14:65:26:82:37:79:c1:f3:fe:21:ee:85:5d:b7:a0:
+                    6a:09:a1:e7:6c:f7:82:91:6a:29:90:52:a2:37:6b:
+                    10:ff:46:e5:1f:43:9d:2e:82:0a:2e:8e:7a:45:a3:
+                    4e:c1:6c:28:0e:20:14:65:56:8d:7e:d1:12:0c:2e:
+                    ac:a5:de:0b:ac:69:9f:99:8a:98:aa:e0:e7:72:8d:
+                    43:c7
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Subject Key Identifier: 
+                53:32:1F:72:E1:0B:A9:45:2B:59:CA:6B:EB:50:1A:31:53:2E:8A:86
+            X509v3 Authority Key Identifier: 
+                keyid:79:AE:F2:A8:DE:F2:EF:9A:87:5F:C3:F5:1F:6F:63:2C:58:29:46:3A
+
+            Authority Information Access: 
+                CA Issuers - URI:http://smoothstack.no/ca/tls-ca.cer
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://smoothstack.no/ca/tls-ca.crl
+
+            X509v3 Subject Alternative Name: 
+                DNS:smoothstack.com, DNS:www.smoothstack.com
+    Signature Algorithm: sha1WithRSAEncryption
+         aa:06:90:93:7b:9f:42:da:08:a2:7e:3b:e8:1f:5b:26:d5:4e:
+         b7:af:4c:19:ac:30:89:80:e5:85:95:fd:05:89:56:38:82:2e:
+         49:cc:45:6e:18:5c:23:f5:67:5d:39:28:0a:29:5c:1d:76:2f:
+         70:ba:93:90:b9:2b:1e:60:0d:cb:45:b3:81:25:ef:c4:b5:5a:
+         39:cf:79:78:22:e1:ef:f6:be:bc:b1:49:0b:44:bb:c0:38:27:
+         f1:78:1c:61:27:55:37:eb:c0:00:a0:87:fc:2e:f3:11:19:88:
+         e0:ae:9f:a6:02:2b:c5:34:69:00:61:87:e0:dc:a8:a4:af:83:
+         d1:f4:70:e2:8d:d8:d0:6f:f4:d3:a8:9b:94:70:5f:b8:80:73:
+         e3:d2:dd:80:4b:89:38:a0:5e:12:e3:98:8d:68:58:02:95:02:
+         f4:fa:e7:76:f4:44:c3:ad:86:19:41:bf:71:78:58:9b:06:10:
+         8f:cc:a1:c2:ed:d0:c8:3a:47:9a:80:43:cb:db:60:22:c7:47:
+         88:4c:44:31:b6:8a:db:2e:77:ba:af:e5:82:c5:d1:93:65:2a:
+         e2:20:82:78:ef:1d:e7:ab:f9:c7:49:17:36:cc:12:31:88:26:
+         d0:dc:71:06:99:32:42:82:3a:9b:23:c0:c7:51:d4:ed:42:35:
+         d6:f8:2d:c5
+-----BEGIN CERTIFICATE-----
+MIIEgzCCA2ugAwIBAgIBAzANBgkqhkiG9w0BAQUFADBsMQswCQYDVQQGEwJVUzEU
+MBIGA1UECgwLU21vb3RoU3RhY2sxKjAoBgNVBAsMIVNtb290aFN0YWNrIENlcnRp
+ZmljYXRlIEF1dGhvcml0eTEbMBkGA1UEAwwSU21vb3RoU3RhY2sgVExTIENBMB4X
+DTIyMDIwODE5NTM0M1oXDTI0MDIwODE5NTM0M1owdDELMAkGA1UEBhMCVVMxETAP
+BgNVBAgMCFZpcmdpbmlhMQ8wDQYDVQQHDAZNY0xlYW4xFDASBgNVBAoMC1Ntb290
+aFN0YWNrMREwDwYDVQQLDAhUcmFpbmluZzEYMBYGA1UEAwwPc21vb3Roc3RhY2su
+Y29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt8itRGZfo0PR1RLX
+wdX0gq9EZZ9v/iBf/RytUN1MCzo2cky0M/5xxYZDY0rKfvL+iidK6rfR9RZpvDi5
+xmukZmHOj46zuy1df7/kzkoqWqCv1fQySU1jtI2CYQ5KmCyK0UVRr8k9R8yNUHGx
+qH9q2QKCkpnO0elUlL4fR3vH7gt5SpeR8yHhJ4kpzIdTqPOPzgN9kV4XxWbpSE4l
+pV223CDJgiBJRiWtepiJlOs/69lxNqEUZSaCN3nB8/4h7oVdt6BqCaHnbPeCkWop
+kFKiN2sQ/0blH0OdLoIKLo56RaNOwWwoDiAUZVaNftESDC6spd4LrGmfmYqYquDn
+co1DxwIDAQABo4IBJjCCASIwDgYDVR0PAQH/BAQDAgWgMAkGA1UdEwQCMAAwHQYD
+VR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMB0GA1UdDgQWBBRTMh9y4QupRStZ
+ymvrUBoxUy6KhjAfBgNVHSMEGDAWgBR5rvKo3vLvmodfw/Ufb2MsWClGOjA/Bggr
+BgEFBQcBAQQzMDEwLwYIKwYBBQUHMAKGI2h0dHA6Ly9zbW9vdGhzdGFjay5uby9j
+YS90bHMtY2EuY2VyMDQGA1UdHwQtMCswKaAnoCWGI2h0dHA6Ly9zbW9vdGhzdGFj
+ay5uby9jYS90bHMtY2EuY3JsMC8GA1UdEQQoMCaCD3Ntb290aHN0YWNrLmNvbYIT
+d3d3LnNtb290aHN0YWNrLmNvbTANBgkqhkiG9w0BAQUFAAOCAQEAqgaQk3ufQtoI
+on476B9bJtVOt69MGawwiYDlhZX9BYlWOIIuScxFbhhcI/VnXTkoCilcHXYvcLqT
+kLkrHmANy0WzgSXvxLVaOc95eCLh7/a+vLFJC0S7wDgn8XgcYSdVN+vAAKCH/C7z
+ERmI4K6fpgIrxTRpAGGH4NyopK+D0fRw4o3Y0G/006iblHBfuIBz49LdgEuJOKBe
+EuOYjWhYApUC9PrndvREw62GGUG/cXhYmwYQj8yhwu3QyDpHmoBDy9tgIsdHiExE
+MbaK2y53uq/lgsXRk2Uq4iCCeO8d56v5x0kXNswSMYgm0NxxBpkyQoI6myPAx1HU
+7UI11vgtxQ==
+-----END CERTIFICATE-----

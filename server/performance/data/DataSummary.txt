@@ -1,0 +1,54 @@
+lsblk
+NAME  MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0   7:0    0 329.7M  1 loop 
+loop1   7:1    0 303.6M  1 loop 
+sda     8:0    0   256G  0 disk 
+sdb     8:16   0   256G  0 disk 
+sdc     8:32   0   256G  0 disk 
+sdd     8:48   0   256G  0 disk /etc/hosts
+                                /etc/hostname
+                                /etc/resolv.conf
+
+blkid
+/dev/loop1: BLOCK_SIZE="2048" UUID="2022-02-14-20-22-00-00" LABEL="LinuxKit" TYPE="iso9660"
+/dev/sdd: UUID="3255683f-53a2-4fdf-91cf-b4c1041e2a62" BLOCK_SIZE="4096" TYPE="ext4"
+/dev/sdb: UUID="3255683f-53a2-4fdf-91cf-b4c1041e2a62" BLOCK_SIZE="4096" TYPE="ext4"
+/dev/loop0: BLOCK_SIZE="2048" UUID="2022-02-14-20-14-00-00" LABEL="wsl-cli-bundle" TYPE="iso9660"
+/dev/sdc: UUID="3255683f-53a2-4fdf-91cf-b4c1041e2a62" BLOCK_SIZE="4096" TYPE="ext4"
+/dev/sda: UUID="3255683f-53a2-4fdf-91cf-b4c1041e2a62" BLOCK_SIZE="4096" TYPE="ext4"
+
+Latency test
+--- . (9p C:\134) ioping statistics ---
+9 requests completed in 5.90 ms, 36 KiB read, 1.53 k iops, 5.96 MiB/s
+generated 10 requests in 9.00 s, 40 KiB, 1 iops, 4.44 KiB/s
+min/avg/max/mdev = 321.7 us / 655.1 us / 1.01 ms / 302.9 us
+
+Sequential write fio test
+IOPS=270, BW=271MiB/s (284MB/s)(15.9GiB/60002msec);
+Run status group 0 (all jobs):
+  WRITE: bw=271MiB/s (284MB/s), 271MiB/s-271MiB/s (284MB/s-284MB/s), io=15.9GiB (17.0GB), run=60002-60002msec
+
+Sequential read fio test
+IOPS=532, BW=533MiB/s (559MB/s)(16.0GiB/30750msec)
+Run status group 0 (all jobs):
+   READ: bw=533MiB/s (559MB/s), 533MiB/s-533MiB/s (559MB/s-559MB/s), io=16.0GiB (17.2GB), run=30750-30750msec
+
+Random write fio test
+IOPS=3316, BW=207MiB/s (217MB/s)(12.1GiB/60017msec);
+Run status group 0 (all jobs):
+  WRITE: bw=207MiB/s (217MB/s), 207MiB/s-207MiB/s (217MB/s-217MB/s), io=12.1GiB (13.0GB), run=60017-60017msec
+
+Random read fio test
+IOPS=8408, BW=526MiB/s (551MB/s)(16.0GiB/31175msec)
+Run status group 0 (all jobs):
+   READ: bw=526MiB/s (551MB/s), 526MiB/s-526MiB/s (551MB/s-551MB/s), io=16.0GiB (17.2GB), run=31175-31175msec
+
+Random write small block fio test
+IOPS=6846, BW=53.5MiB/s (56.1MB/s)(3210MiB/60018msec);
+Run status group 0 (all jobs):
+  WRITE: bw=53.5MiB/s (56.1MB/s), 53.5MiB/s-53.5MiB/s (56.1MB/s-56.1MB/s), io=3210MiB (3366MB), run=60018-60018msec
+
+Random read small block fio test
+IOPS=31.4k, BW=246MiB/s (258MB/s)(14.4GiB/60001msec)
+Run status group 0 (all jobs):
+   READ: bw=246MiB/s (258MB/s), 246MiB/s-246MiB/s (258MB/s-258MB/s), io=14.4GiB (15.5GB), run=60001-60001msec
